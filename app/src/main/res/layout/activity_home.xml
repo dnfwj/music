@@ -8,54 +8,10 @@
     android:background="@color/white"
     tools:context=".HomeActivity">
 
-    <!--内容去-->
-    <RelativeLayout
-        android:id="@+id/title_layout"
+    <include
+        layout="@layout/app_bar_main"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp">
-
-<!--        <TextView-->
-<!--            android:id="@+id/toggle_view"-->
-<!--            android:layout_width="20dp"-->
-<!--            android:layout_height="20dp"-->
-<!--            android:layout_alignParentStart="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:background="@mipmap/category" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/search_view"-->
-<!--            android:layout_width="20dp"-->
-<!--            android:layout_height="20dp"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_centerVertical="true"-->
-<!--            android:background="@mipmap/b_p" />-->
-
-
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <com.google.android.material.tabs.TabItem
-                android:text="我的"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <com.google.android.material.tabs.TabItem
-                android:text="发现"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <com.google.android.material.tabs.TabItem
-                android:text="朋友"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </com.google.android.material.tabs.TabLayout>
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/viewPager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-    </RelativeLayout>
+        android:layout_height="match_parent" />
 
     <!--侧滑菜单-->
     <RelativeLayout

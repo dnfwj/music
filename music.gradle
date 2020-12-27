@@ -2,6 +2,7 @@ ext {
 
     android =[
             applicationId     :'com.project.music',
+            buildToolsVersion : '30.0.2',
             compileSdkVersion : 30,
             minSdkVersion     : 21,
             targetSdkVersion  : 30,
@@ -11,9 +12,15 @@ ext {
     ]
 
     depsVersion =[
-            appcompat:'1.2.0'
+            appcompat:'1.2.0',
+            butterknife:'10.2.3',
+            butterknife_compiler:'10.2.3',
+            okhttp:'4.9.0'
     ]
     depsLibs =[
             appcompat : "androidx.appcompat:appcompat:${depsVersion.appcompat}",
+            butterknife:"com.jakewharton:butterknife:${depsVersion.butterknife}",
+            butterknife_compiler:"com.jakewharton:butterknife-compiler:${depsVersion.butterknife_compiler}",
+            okhttp3 :"com.squareup.okhttp3:okhttp:${depsVersion.okhttp}"
     ]
 }
